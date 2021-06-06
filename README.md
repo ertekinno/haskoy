@@ -1,8 +1,10 @@
 # Hasköy
 
-![Cover](cover.png)
+[![Cover](cover.png)](https://haskoy.ertekinn.com/)
 
 Hasköy is an open-source variable sans-serif typeface family. Designed with powerful opentype features and each weight includes latin-extended language support, stylistic alternates, fractions, tabular figures, arrows and more. Currently, the family includes Latin Vietnamese, Pinyin, and all Western, Central, and South-Eastern European language support.
+
+All weights, styles and opentype features of the Hasköy family can be tested on [haskoy.ertekinn.com](https://haskoy.ertekinn.com/)
 
 
 ## Building the Fonts
