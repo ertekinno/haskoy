@@ -1,2 +1,2 @@
-fontmake
-git+https://github.com/googlefonts/gftools
+fontbakery
+gftools

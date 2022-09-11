@@ -9,21 +9,36 @@ All weights, styles and opentype features of the Hasköy family can be tested on
 
 ## Building the Fonts
 
-Family is built using fontmake and gftools post processing script. Tools are all python based.
+The font is built using fontmake and gftools post processing script. Tools are all python based, so it must be previously installed.
 
 To install all the Python tools into a virtualenv, do the following:
 
-```
-python3 -m venv venv
-source venv/bin/activate
-pip install -r requirements.txt
+From terminal:
+
 ```
 
-Then run the build script in the terminal:
+cd your/local/project/directory
+
+#once in the project folder create a virtual environment. 
+This step has to be done just once, the first time:
+
+python3 -m venv venv
+
+#activate the virtual environment
+
+source venv/bin/activate
+
+#install the required dependencies
+
+pip install -r requirements.txt
+
+```
+
+Then run the this command:
 
 ```
 cd source
-sh build.sh
+gftools builder config.yml
 ```
 
 ## License
