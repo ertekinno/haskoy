@@ -50681,7 +50681,7 @@ name = Italic;
 },
 {
 axesValues = (
-400
+500
 );
 customParameters = (
 {
@@ -50706,7 +50706,8 @@ value = "7";
 }
 );
 instanceInterpolations = {
-"38A022BC-B010-4522-83EC-9E43C5A6F806" = 1;
+"38A022BC-B010-4522-83EC-9E43C5A6F806" = 0.75;
+"DFC09A70-1A82-4D07-97CF-EECDCA771356" = 0.25;
 };
 isItalic = 1;
 linkStyle = Medium;
@@ -50715,7 +50716,7 @@ weightClass = 500;
 },
 {
 axesValues = (
-400
+600
 );
 customParameters = (
 {
@@ -50740,7 +50741,8 @@ value = "7";
 }
 );
 instanceInterpolations = {
-"38A022BC-B010-4522-83EC-9E43C5A6F806" = 1;
+"38A022BC-B010-4522-83EC-9E43C5A6F806" = 0.5;
+"DFC09A70-1A82-4D07-97CF-EECDCA771356" = 0.5;
 };
 isItalic = 1;
 linkStyle = SemiBold;
