@@ -42,7 +42,7 @@ Then run the this command:
 
 ```
 cd source
-gftools builder config.yml
+sh build.sh
 ```
 
 ## License
