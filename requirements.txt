@@ -1,6 +1,8 @@
-# Python 3.10–3.12
-gftools>=0.9.90
-fontmake>=3.10
-glyphsLib>=6.10
-ufoLib2>=0.16
-fontbakery[googlefonts]>=1.0
+# Build and QA tools. Pinned versions are what the fonts in fonts/ were built with.
+# Python 3.10–3.12.
+fontmake==3.12.2
+glyphsLib==6.17.2
+ufoLib2==0.19.1
+fonttools[woff]==4.68.0
+gftools[qa]==0.9.996
+fontbakery[googlefonts]==1.1.0

@@ -3,3 +3,5 @@ venv
 source/build/
 source/build.ninja
 source/.ninja_log
+build.stamp
+out/

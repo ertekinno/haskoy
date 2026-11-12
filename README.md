@@ -13,18 +13,13 @@ The source is `source/haskoy.glyphs` (Glyphs 3). The fonts are built with [gftoo
 
 The italics are slanted versions of the upright masters. `source/prepare_sources.py` creates the upright and italic designspaces from the `.glyphs` file, using the Rename Glyphs, Decompose Glyphs and Transformations parameters of the "Italic" instance. To change the italic, edit those parameters in Glyphs.
 
-Set up a virtual environment once (Python 3.10–3.12):
+Build and test with `make` (Python 3.10–3.12; the first run sets up a virtual environment from `requirements.txt`):
 
 ```
-python3 -m venv venv
-source venv/bin/activate
-pip install -r requirements.txt
-```
-
-Then build:
-
-```
-sh source/build.sh
+make build   # builds everything into fonts/
+make test    # runs fontbakery (Google Fonts profile), reports in out/fontbakery/
+make proof   # HTML proofs in out/proof/
+make clean   # removes the virtual environment and build intermediates
 ```
 
 Output goes to `fonts/`:
@@ -34,11 +29,7 @@ Output goes to `fonts/`:
 - `fonts/otf`: static OTFs
 - `fonts/webfonts`: WOFF2
 
-To check the fonts against Google Fonts' requirements:
-
-```
-fontbakery check-googlefonts fonts/variable/*.ttf
-```
+Every push to `main` and every pull request is built and tested on GitHub Actions. The fonts and Font Bakery reports are attached to each run as the `fonts-and-reports` artifact.
 
 ## License
 
