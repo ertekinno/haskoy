@@ -1,3 +1,5 @@
 .DS_Store
 venv
-
+source/build/
+source/build.ninja
+source/.ninja_log

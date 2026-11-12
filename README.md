@@ -9,40 +9,35 @@ All weights, styles and opentype features of the Hasköy family can be tested on
 
 ## Building the Fonts
 
-The font is built using fontmake and gftools post processing script. Tools are all python based, so it must be previously installed.
+The source is `source/haskoy.glyphs` (Glyphs 3). The fonts are built with [gftools builder](https://github.com/googlefonts/gftools), the same toolchain Google Fonts uses.
 
-To install all the Python tools into a virtualenv, do the following:
+The italics are slanted versions of the upright masters. `source/prepare_sources.py` creates the upright and italic designspaces from the `.glyphs` file, using the Rename Glyphs, Decompose Glyphs and Transformations parameters of the "Italic" instance. To change the italic, edit those parameters in Glyphs.
 
-From terminal:
-
-```
-cd your/local/project/directory
-```
-
-once in the project folder create a virtual environment. 
-This step has to be done just once, the first time:
+Set up a virtual environment once (Python 3.10–3.12):
 
 ```
 python3 -m venv venv
-```
-
-activate the virtual environment
-
-```
 source venv/bin/activate
-```
-
-install the required dependencies
-
-```
 pip install -r requirements.txt
 ```
 
-Then run the this command:
+Then build:
 
 ```
-cd source
-sh build.sh
+sh source/build.sh
+```
+
+Output goes to `fonts/`:
+
+- `fonts/variable`: `Haskoy[wght].ttf` and `Haskoy-Italic[wght].ttf`
+- `fonts/ttf`: static TTFs
+- `fonts/otf`: static OTFs
+- `fonts/webfonts`: WOFF2
+
+To check the fonts against Google Fonts' requirements:
+
+```
+fontbakery check-googlefonts fonts/variable/*.ttf
 ```
 
 ## License

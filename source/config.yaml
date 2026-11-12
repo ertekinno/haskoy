@@ -1,0 +1,14 @@
+# Google Fonts build. Run `sh build.sh` (it prepares the sources, then calls gftools builder).
+sources:
+  - build/Haskoy.designspace
+  - build/Haskoy-Italic.designspace
+familyName: Haskoy
+buildVariable: true
+buildStatic: true
+buildOTF: true
+buildWebfont: true
+autohintTTF: true
+outputDir: ../fonts
+axisOrder:
+  - wght
+  - ital

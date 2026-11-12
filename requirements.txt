@@ -1,4 +1,6 @@
-fontmake
-git+https://github.com/googlefonts/gftools
-statmake
-brotli
+# Python 3.10–3.12
+gftools>=0.9.90
+fontmake>=3.10
+glyphsLib>=6.10
+ufoLib2>=0.16
+fontbakery[googlefonts]>=1.0
